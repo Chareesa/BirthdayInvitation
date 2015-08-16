@@ -1,0 +1,22 @@
+html, body {
+  height: 99%;
+}
+
+body {
+  clip: rect(2px,365px,457px,2px);
+}
+
+video#bgvid{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: transparent sno-repeat;
+  background-size: cover;
+}
