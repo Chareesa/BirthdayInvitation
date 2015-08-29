@@ -1,0 +1,27 @@
+{
+  "name": "CharlaBirthday",
+  "version": "1.0.0",
+  "description": "Charla's Birthday Invitation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chareesa/BirthdayInvitation.git"
+  },
+  "author": "Chareesa Graham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chareesa/BirthdayInvitation/issues"
+  },
+  "homepage": "https://github.com/Chareesa/BirthdayInvitation",
+  "dependencies": {
+    "body-parser": "^1.9.2",
+    "sendgrid": "^1.9.2",
+    "express": "^4.10.2"
+  },
+  "devDependencies": {
+    "sendgrid": "^1.9.2"
+  }
+}
