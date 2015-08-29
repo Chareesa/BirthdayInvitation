@@ -38,12 +38,14 @@
 
     <div class="col-md-4">
       <div id="birthdayInfo">
-        <h1>Charla's 35th</h1>
+        <h1>Charla Burke's</h1>
+        <h1 id="whichBirthday">35th</h1>
         <h1>Birthday Party!!</h1>
         <br />
-        <h2>Dec 26-27th</h2>
         <br />
-        <h4>4115 NE 48th Ave</h4>
+        <!-- <h2>Dec 26-27th</h2>
+        <br /> -->
+        <h4>4115 N E 48th Ave</h4>
         <h4>Vancouver, WA</h4>
         <br />
         <br />
@@ -62,29 +64,39 @@
   <div id="openModal" class="modalDialog">
     <div>
       <a href="#close" title="Close" class="close">X</a>
-      <h2 class="centerText">Send Your RSVP</h2>
+      <h2 class="centerText">RSVP</h2>
       <br />
       <form>
         <div class="row">
           <p class="col-sm-6">What's your name?</p>
-          <input class="col-sm-5" type="text">
+          <input class="col-sm-5 centerText" type="text">
         </div>
         <br />
         <div class="row">
           <p class="col-sm-6">What dish would you like to bring?</p>
-          <input class="col-sm-5" type="text">
+          <input class="col-sm-5 centerText" type="text">
         </div>
         <div class="row">
           <p class="col-sm-6">Are you staying the night?</p>
-          <input class="col-sm-5" type="text">
+          <input class="col-sm-5 centerText" type="text">
         </div>
         <br />
         <div class="row">
           <p class="col-sm-6">What's your email?</p>
-          <input class="col-sm-5" type="text">
+          <input class="col-sm-5 centerText" type="text">
         </div>
         <br />
-        <input class="centerText" type="submit" value="Add me!">
+        <div class="row">
+          <p class="col-sm-12">Select the dates you are available?</p>
+        </div>
+        <div class="row" style="padding-left: 12px;">
+          <input class="col-sm-1" type="checkbox">
+          <p class="col-sm-3" style="padding-left: 0;">Dec. 26th</p>
+          <input class="col-sm-1" type="checkbox">
+          <p class="col-sm-3" style="padding-left: 0;">Jan 9th</p>
+        </div>
+        <br />
+        <input class=" btn btn-primary centerText" role="button" type="submit" value="Send it!" style="margin-bottom: 12px;">
       </form>
     </div>
   </div>

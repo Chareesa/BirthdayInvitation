@@ -1,0 +1,14 @@
+{
+  "name": "CharlaBirthday",
+  "description": "Charla's Birthday Invitation",
+  "version": "1.0.0",
+  "dependencies": {
+    "sendgrid": "^1.9.2",
+    "express": "3.x"
+  },
+  "devDependencies": {
+    "sendgrid": "^1.9.2",
+    "grunt-contrib-jscs": "*",
+    "grunt-contrib-jshint": "*"
+  }
+}

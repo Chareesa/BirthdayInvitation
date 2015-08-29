@@ -6,6 +6,10 @@ body {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: calligraphy;
+  src: url(../fonts/Calligraphy.ttf);
+}
 video#bgvid{
   position: fixed;
   right: 0;
@@ -59,9 +63,18 @@ video#bgvid{
     padding: 12px 22px;
     border: 2px solid #0099cc;
 }*/
+h1 {
+  font-size: 55px;
+  padding: 0;
+  margin: 0;
+}
 h1, h2, h3, h4{
+  font-family: calligraphy;
   color: white;
   text-shadow: -1px 0 #0099cc, 0 1px #0099cc, 1px 0 #0099cc, 0 -1px #0099cc;
+}
+#whichBirthday {
+  font-size: 45px;
 }
 .modalDialog {
   position: fixed;
