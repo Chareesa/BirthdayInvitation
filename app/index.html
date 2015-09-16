@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <style type="text/css">
+      #response { display:none; padding: 5px;}
+      .success { background-color: green;}
+      .error { background-color: red;}
+    </style>
     <link rel="stylesheet" href="css/main.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -24,7 +30,7 @@
     <![endif]-->
   </head>
 <body style="position: relative;">
-  <audio src="./media/akashicRecords.mp3" autoplay loop></audio>
+  <audio id="bgaudio" src="./media/akashicRecords.mp3" autoplay loop></audio>
   <video id="bgvid" autoplay loop>
     <source src="./media/furtherOut.mp4" type="video/mp4" />
   </video>
@@ -62,37 +68,38 @@
   </div>
 
   <div id="openModal" class="modalDialog">
+  <div id="response"></div>
     <div>
       <a href="#close" title="Close" class="close">X</a>
       <h2 class="centerText">RSVP</h2>
       <br />
-      <form>
+      <form id="rsvpForm">
         <div class="row">
           <p class="col-sm-6">What's your name?</p>
-          <input class="col-sm-5 centerText" type="text">
+          <input class="col-sm-5 centerText" type="text" id="name">
         </div>
         <br />
         <div class="row">
           <p class="col-sm-6">What dish would you like to bring?</p>
-          <input class="col-sm-5 centerText" type="text">
+          <input class="col-sm-5 centerText" type="text" id="dish">
         </div>
         <div class="row">
           <p class="col-sm-6">Are you staying the night?</p>
-          <input class="col-sm-5 centerText" type="text">
+          <input class="col-sm-5 centerText" type="text" id="staythenight">
         </div>
         <br />
         <div class="row">
           <p class="col-sm-6">What's your email?</p>
-          <input class="col-sm-5 centerText" type="text">
+          <input class="col-sm-5 centerText" type="text" id="email">
         </div>
         <br />
         <div class="row">
           <p class="col-sm-12">Select the dates you are available?</p>
         </div>
         <div class="row" style="padding-left: 12px;">
-          <input class="col-sm-1" type="checkbox">
+          <input class="col-sm-1" type="checkbox" id="dec26">
           <p class="col-sm-3" style="padding-left: 0;">Dec. 26th</p>
-          <input class="col-sm-1" type="checkbox">
+          <input class="col-sm-1" type="checkbox" id="jan9">
           <p class="col-sm-3" style="padding-left: 0;">Jan 9th</p>
         </div>
         <br />
@@ -110,6 +117,8 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="script/script.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+  <script src="scripts/emailer.js"></script>
 </body>
 </html>

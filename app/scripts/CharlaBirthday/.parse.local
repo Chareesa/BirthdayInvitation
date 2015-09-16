@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "CharlaBirthday": {
+      "applicationId": "Cwm22gtMkv531CNMsA4I7fC8VQ9Xgdv6IB3hPPRM"
+    },
+    "_default": {
+      "link": "CharlaBirthday"
+    }
+  }
+}
