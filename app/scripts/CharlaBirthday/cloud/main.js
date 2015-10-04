@@ -3,12 +3,13 @@
 Parse.Cloud.define("sendEmail", function(request, response) {
   var sendgrid = require("sendgrid");
   sendgrid.initialize("chareesa", "involve");
-  console.log('entered main.js');
+  console.log('welcome to main.js');
 
   var name = request.params.name;
   var dish = request.params.dish;
   var staythenight = request.params.staythenight;
   var email = request.params.email;
+  var jan1 = request.params.jan1;
   var dec26 = request.params.dec26;
   var jan9 = request.params.jan9;
 
@@ -24,12 +25,12 @@ Parse.Cloud.define("sendEmail", function(request, response) {
      success: function(httpResponse) {
        console.log(httpResponse);
        response.success("Email sent!");
-       console.log("success from main.js");
+       console.log("success from the main.js");
      },
      error: function(httpResponse) {
        console.error(httpResponse);
        response.error("Uh oh, something went wrong");
-       console.log("error from main.js");
+       console.log("error from the main.js");
      }
    });
 
@@ -45,12 +46,12 @@ Parse.Cloud.define("sendEmail", function(request, response) {
      success: function(httpResponse) {
        console.log(httpResponse);
        response.success("Email sent!");
-       console.log('success from main.js');
+       console.log('success from the main.js');
     },
      error: function(httpResponse) {
        console.error(httpResponse);
        response.error("Uh oh, something went wrong");
-       console.log('error from main.js');
+       console.log('error from the main.js');
     }
   });
 });

@@ -2,14 +2,11 @@ html, body {
   height: 99%;
 }
 
-body {
-  overflow: hidden;
-}
-
 @font-face {
   font-family: calligraphy;
   src: url(../fonts/Calligraphy.ttf);
 }
+
 video#bgvid{
   position: fixed;
   right: 0;
@@ -22,13 +19,14 @@ video#bgvid{
   height: auto;
   z-index: -100;
   overflow: hidden;
-  background: transparent sno-repeat;
+  background: transparent no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 #contentWrapper {
   text-align: center;
 }
+
 .charlaPic {
   width: 130px;
   height: 200px;
@@ -110,12 +108,23 @@ h1, h2, h3, h4{
   height: 112px;
   border-radius: 50%;
 }
-#b {
+#charlaVroomVroomContainer {
   left: -600px;
+  position: absolute;
+  top:85%;
 }
 .centerText {
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 892px) {
+  body {
+    overflow: initial;
+  }
+  #charlaVroomVroom {
+    top: 30%;
+  }
 }

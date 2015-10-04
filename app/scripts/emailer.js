@@ -17,6 +17,7 @@ $(document).ready(function(){
       staythenight: document.getElementById('staythenight').value,
       email: document.getElementById('email').value,
       dec26: document.getElementById('dec26').value,
+      jan1: document.getElementById('jan1').value,
       jan9: document.getElementById('jan9').value
     }
 
