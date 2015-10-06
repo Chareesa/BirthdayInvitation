@@ -1,5 +1,6 @@
 html, body {
   height: 99%;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -126,5 +127,26 @@ h1, h2, h3, h4{
   }
   #charlaVroomVroom {
     top: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+      padding-top: 8%;
+      padding-bottom: 8%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .charlaPic {
+    width: 169px;
+    height: 260px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .charlaPic {
+    width: 253px;
+    height: 390px;
   }
 }
