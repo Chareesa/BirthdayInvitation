@@ -37,7 +37,7 @@ Parse.Cloud.define("sendEmail", function(request, response) {
    to: email,
    from: "chareesagraham@gmail.com",
    fromname: "Chareesa Graham",
-   subject: "This is for RSVP'ers",
+   subject: "Thank you for the rsvp!",
    text: "Hi " + name + "! Thanks for sending your rsvp to Charla's party on Jan 1st. If you submitted that you're coming, paper invitations/reminders will be sent soon to the address you provided. If you have any pictures of you and Charla, I'd love it if you'd send them to me (whether you're going or not) or bring them with you to the party. My email is chareesagraham@gmail.com Thank you so much for your rsvp!!"
    },
 
