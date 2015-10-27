@@ -26,20 +26,20 @@ $(document).ready(function(){
         $('#rsvpModal').hide();
         window.setTimeout( function(){
           window.location = "#";
-        }, 3000 );
+        }, 2000 );
         $('#joinPartyBtn').replaceWith($('<h4>' + 'Thank you for your rsvp' + '</h4>'));
-        
+
       },
 
       error: function(object, error) {
         console.log(error);
         $('#response').show();
-        $('#response').html('Oh no! Not enough information was entered. <br> Hold on, I\'ll bring that form back.').addClass('error').fadeIn('fast');
+        $('#response').html('Oh no! Something happened or not enough information was entered. <br> Hold on, I\'ll bring that form back.').addClass('error').fadeIn('fast');
         $('#rsvpModal').hide();
         window.setTimeout( function(){
           $('#rsvpModal').show();
           $('#response').hide();
-        }, 3500 );
+        }, 3700 );
       }
     });
   });

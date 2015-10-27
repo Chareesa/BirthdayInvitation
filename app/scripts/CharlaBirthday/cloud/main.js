@@ -45,12 +45,10 @@ Parse.Cloud.define("sendEmail", function(request, response) {
      success: function(httpResponse) {
        console.log(httpResponse);
        response.success("Email sent!");
-       console.log('success from the main.js');
     },
      error: function(httpResponse) {
        console.error(httpResponse);
        response.error("Uh oh, something went wrong");
-       console.log('error from the main.js');
     }
   });
 });
