@@ -17,7 +17,7 @@ Parse.Cloud.define("sendEmail", function(request, response) {
     from: email,
     fromname: name,
     subject: "This is for me, Chareesa",
-    text: name + " has rsvp'd just now! <br> They are " + coming + " and will bring " + dish + " with them. <br> Will they stay the night? " + staythenight + ". Email? " + email + ". Home Address? " + address
+    text: name + " has rsvp'd just now! Are they coming?" + coming + ". They will bring " + dish + " with them. Will they stay the night? " + staythenight + ". Email? " + email + ". Home Address? " + address
   },
 
    {
