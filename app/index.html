@@ -30,8 +30,11 @@
     <![endif]-->
   </head>
 <body style="position: relative;">
+  <img id="audioBtn" width=40px src="./media/pause.png" onclick="playVideo()" style="position: absolute; z-index:99; bottom: 0">
   <audio id="bgaudio" src="./media/akashicRecords.mp3" autoplay loop></audio>
-  <video id="bgvid" autoplay loop>
+  <video id="bgvid" preload="auto" autoplay loop>
+    <source src="backgroundvideo.ogv" type="video/ogg ogv"; codecs="theora, vorbis"/>
+    <source src="./media/furtherOut.webm" type="video/webm" />
     <source src="./media/furtherOut.mp4" type="video/mp4" />
   </video>
 
@@ -42,7 +45,7 @@
       <img class="charlaPic charlaPicLower" src="./media/charla4.jpg">
     </div>
 
-    <div class="col-md-4 centerColumn">
+    <div class="col-md-4" style="height: 100%; top: 50%">
       <div id="birthdayInfo">
         <h1>Charla Burke's</h1>
         <h1 id="whichBirthday">35th</h1>
@@ -51,12 +54,12 @@
         <br />
         <!-- <h2>Dec 26-27th</h2>
         <br /> -->
-        <h4>4115 N E 48th Ave</h4>
-        <h4>Vancouver, WA</h4>
+        <h3>4115 N E 48th Ave</h3>
+        <h3>Vancouver, WA</h3>
         <br />
         <br />
 
-        <a class="btn btn-primary btn-lg outline" role="button" href="#openModal">Join the party!</a>
+        <a id="joinPartyBtn" class="btn btn-primary btn-lg outline" role="button" href="#openModal">Join the party!</a>
         <br /><br /><br /><br />
       </div>
     </div>
@@ -71,8 +74,8 @@
   </div>
 
   <div id="openModal" class="modalDialog">
-    <div id="response"></div>
-    <div>
+    <div id="response" class="centerText"></div>
+    <div id="rsvpModal">
       <a href="#close" title="Close" class="close">X</a>
       <h2 class="centerText">RSVP</h2>
       <br />
@@ -83,32 +86,28 @@
         </div>
         <br />
         <div class="row">
-          <p class="col-sm-6">What dish would you like to bring?</p>
-          <input class="col-sm-5 centerText" type="text" id="dish">
+          <p class="col-sm-6">Are you coming to the party?!</p>
+          <input class="col-sm-5 centerText" type="text" id="coming">
         </div>
         <div class="row">
-          <p class="col-sm-6">Are you staying the night?</p>
+          <p class="col-sm-6">Will you stay for a sleepover?</p>
           <input class="col-sm-5 centerText" type="text" id="staythenight">
         </div>
-        <br />
+        <div class="row">
+          <p class="col-sm-6">Potluck dinner! What would you like to bring?</p>
+          <input class="col-sm-5 centerText" type="text" id="dish">
+        </div>
         <div class="row">
           <p class="col-sm-6">What's your email?</p>
           <input class="col-sm-5 centerText" type="text" id="email">
         </div>
         <br />
         <div class="row">
-          <p class="col-sm-12">Select the dates you are available?</p>
-        </div>
-        <div class="row" style="padding-left: 12px;">
-          <input class="col-sm-1" type="checkbox" id="dec26">
-          <p class="col-sm-3" style="padding-left: 0;">Dec. 26th</p>
-          <input class="col-sm-1" type="checkbox" id="jan1">
-          <p class="col-sm-3" style="padding-left: 0;">Jan 1st</p>
-          <input class="col-sm-1" type="checkbox" id="jan9">
-          <p class="col-sm-3" style="padding-left: 0;">Jan 9th</p>
+          <p class="col-sm-6">What's your address?</p>
+          <input class="col-sm-5 centerText" type="text" id="address">
         </div>
         <br />
-        <input class=" btn btn-primary centerText" role="button" type="submit" value="Send it!" style="margin-bottom: 12px;">
+        <button onclick="showResponse();" type="submit" id="submit" class="btn btn-primary btn-default centerText" role="button" value="Send it!" style="margin-bottom: 12px;">Send it!</button>
       </form>
     </div>
   </div>

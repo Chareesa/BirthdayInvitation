@@ -6,19 +6,18 @@ Parse.Cloud.define("sendEmail", function(request, response) {
   console.log('welcome to main.js');
 
   var name = request.params.name;
-  var dish = request.params.dish;
+  var coming = request.params.coming;
   var staythenight = request.params.staythenight;
+  var dish = request.params.dish;
   var email = request.params.email;
-  var jan1 = request.params.jan1;
-  var dec26 = request.params.dec26;
-  var jan9 = request.params.jan9;
+  var address = request.params.address;
 
   sendgrid.sendEmail({
     to: "chareesagraham@gmail.com",
     from: email,
     fromname: name,
     subject: "This is for me, Chareesa",
-    text: name + " has rsvp'd just now! <br> They will bring " + dish + " with them. <br> Will they stay the night? " + staythenight + ". Available dec 26? " + dec26 + ". Jan 1st? " + jan1 + ". Jan 9? " + jan9 + "."
+    text: name + " has rsvp'd just now! <br> They are " + coming + " and will bring " + dish + " with them. <br> Will they stay the night? " + staythenight + ". Email? " + email + ". Home Address? " + address
   },
 
    {
@@ -39,7 +38,7 @@ Parse.Cloud.define("sendEmail", function(request, response) {
    from: "chareesagraham@gmail.com",
    fromname: "Chareesa Graham",
    subject: "This is for RSVP'ers",
-   text: "Thank you " + name
+   text: "Hi " + name + "! Thanks for sending your rsvp to Charla's party on Jan 1st. If you submitted that you're coming, paper invitations/reminds will be sent soon to the address you provided. If you have any pictures of you and Charla, I'd love it if you'd send them to me (whether you're going or not) or bring them with you to the party. My email is chareesagraham@gmail.com Thank you so much for your rsvp!!"
    },
 
    {
