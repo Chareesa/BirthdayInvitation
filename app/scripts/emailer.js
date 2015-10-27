@@ -34,12 +34,12 @@ $(document).ready(function(){
       error: function(object, error) {
         console.log(error);
         $('#response').show();
-        $('#response').html('Oh no! Something happened or not enough information was entered. <br> Hold on, I\'ll bring that form back.').addClass('error').fadeIn('fast');
+        $('#response').html('Oh no! <br> Something happened or not enough information was entered. <br> Hold on, I\'ll bring that form back.').addClass('error').fadeIn('fast');
         $('#rsvpModal').hide();
         window.setTimeout( function(){
           $('#rsvpModal').show();
           $('#response').hide();
-        }, 3700 );
+        }, 3800 );
       }
     });
   });
