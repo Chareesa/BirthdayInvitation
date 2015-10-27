@@ -27,7 +27,6 @@ video#bgvid{
 #contentWrapper {
   text-align: center;
 }
-
 .charlaPic {
   width: 130px;
   height: 200px;
@@ -112,7 +111,7 @@ h1, h2, h3, h4{
 #charlaVroomVroomContainer {
   left: -600px;
   position: absolute;
-  top:85%;
+  bottom: 0;
 }
 .centerText {
   text-align: center;
@@ -124,16 +123,6 @@ h1, h2, h3, h4{
 @media (max-width: 892px) {
   body {
     overflow: initial;
-  }
-  #charlaVroomVroom {
-    top: 30%;
-  }
-}
-
-@media (min-width: 992px) {
-  .col-md-4 {
-      padding-top: 8%;
-      padding-bottom: 8%;
   }
 }
 
